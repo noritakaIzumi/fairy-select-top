@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Fairy Select</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .gradient, .gradient-container {
+            background: rgba(248, 249, 250, 0.75);
+        }
+        .gradient:hover {
+            background: rgba(135, 206, 235, 0.9);
+        }
+    </style>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-
-<p>Welcome to my site!</p>
-
-<h2>Contents</h2>
-<ul>
-    <li><a href="https://portfolio.fairy-select.com/">Portfolio</a></li>
-    <li><a href="https://qiita.com/noritakaIzumi">Qiita</a></li>
-    <li><a href="https://note.com/noritakaizumi">Note</a></li>
-</ul>
-
-<p>This page is under construction.</p>
-
-<p>© 2020 Noritaka IZUMI</p>
-
+<body style="background-image: url('images/img-bg.jpg')">
+<div class="container text-center gradient-container" style="height: 100vh;">
+    <h1 class="display-1 text-success">Fairy Select</h1>
+    <p class="lead">Welcome to my site!</p>
+    <h3 class="display-3">Contents</h3>
+    <div class="card-group mb-3">
+        <div class="card border-0 m-2 gradient">
+            <a href="//portfolio.fairy-select.com" class="btn m-0 p-0" aria-current="page">
+                <img src="images/card-img-portfolio.png" class="card-img-top" alt="card-img-portfolio">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">The skills and work history as an engineer. You can also download the resume
+                        from this site.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card border-0 m-2 gradient">
+            <a href="//qiita.com/noritakaIzumi" class="btn m-0 p-0" aria-current="page">
+                <img src="images/card-img-qiita.png" class="card-img-top" alt="card-img-qiita">
+                <div class="card-body">
+                    <h5 class="card-title">Qiita</h5>
+                    <p class="card-text">Technical articles about programming. (Sorry this is Japanese only)</p>
+                </div>
+            </a>
+        </div>
+        <div class="card border-0 m-2 gradient">
+            <a href="//note.com/noritakaizumi" class="btn m-0 p-0" aria-current="page">
+                <img src="images/card-img-note.png" class="card-img-top" alt="card-img-note">
+                <div class="card-body">
+                    <h5 class="card-title">Note</h5>
+                    <p class="card-text">Blogs. (Sorry this is Japanese only)</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <p class="lead">© 2020- Noritaka IZUMI</p>
+</div>
 </body>
 </html>
